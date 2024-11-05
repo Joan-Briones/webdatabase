@@ -31,7 +31,34 @@
  </div>
  </nav>
 <main>
- <div class="container d-flex flex-column align-items-center"></div>
+ <div class="container d-flex flex-column align-items-center">
+    <img src ="img/Batangas_State_Logo.png" alt ="logo" class =" w-25 mb-3">
+    <h2>Form Validation</h2>
+    <p class ="lead text-center"> Input your credentials: </p>
+    <form action="$_SERVER['PHP_SELF']" method="post" class ="mt-4 w-75">
+    <div class = "mb-3">
+    <label form = "name" class = "form-label">Username:</label> 
+    <input type = "text" class = "form-control" id="name" name ="name" placeholder ="Enter your username">
+    <div id ="validationServerFeedback" class="invalid-feedback">
+        Please provide a valid username.
+    </div>
+   </div>
+    <div class = "mb-3">
+        <label form = "name" class = "form-label">Password:</label> 
+        <input type = "text" class = "form-control" id="name" name ="name" placeholder ="Enter your username">
+        <div id ="validationServerFeedback" class="invalid-feedback">
+            Please provide a valid username.
+        </div>
+    </div>
+    <center>
+    <div class = "mb-3">
+        <input type = "submit" value = "Login" class = "btn btn-dark w-45"  name ="submit" name ="login">
+        <input type = "submit" class = "btn btn-dark w-45" id="name" name ="submit" value = "Signup">
+    </center>
+    </div>
+
+    </form>
+</div>
 </main>
 <footer class="text-center mt-5">
     &copy; Joan Briones - 2024
